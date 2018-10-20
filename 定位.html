@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style> 
+
+        body{
+            height:3000px;
+            margin :0px;
+        }/*默认的小空空没了*/
+     
+         div{
+            width:100px;
+            height:50px;
+            display:inline-block;
+           
+        }
+        #div0{
+            width:500px;
+            height:300px;
+            background:grey;
+            margin:10px;
+            position:relative ;
+
+        }
+        #div1{
+            background: red;
+        }
+        #div2{
+            background:green;
+            position: absolute;/*相对定位，相对自己原来的位置，定位后空间不释放。。position：absolute绝对定位,相对于最近已定位的祖先元素，如果没有就像对于body，空间释放*/
+            left:90px;
+            top:10px;
+        }
+        #div3{
+            background:blue;
+        }
+
+
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="div0">
+            <div id="div1">
+                1111
+            </div>
+            <div id="div2">
+                2222
+            </div>
+            <div id="div3">
+                3333
+            </div>
+    </div>
+</body>
+</html>

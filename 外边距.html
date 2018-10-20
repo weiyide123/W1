@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    #div1{
+        width:200px;
+        height:50px;
+        line-height:50px;
+        background:pink;
+
+        /*文本溢出*/
+        overflow:hidden;/*溢出隐藏，单纯的div就这一个，三句组合*/
+        text-overflow:ellipsis;/*文本溢出。。。*/
+        /*overflow:scroll滚动*/
+        white-space: nowrap; /*强制一行里显示，不换行*/
+
+    }
+    #div2{
+        width: 200px;
+        height :4566px;
+        background: brown;
+        white-space:pre;/*不强制在一行里*/
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+         hheheheehehe fggfhhjghjkehehehe
+
+    </div>
+    <div id="div2"> 
+        hheheheehehe 
+        fggf                       hhjg
+        hjkehehehe
+    </div>
+</body>
+</html>
