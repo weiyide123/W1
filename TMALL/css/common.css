@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+body{
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+}
+/* banner 开始 */
+.banner{
+    text-align:center;
+    background:#3a3cd3
+}
+.banner img{
+    display:block;
+    margin:0 auto;
+}
+.banner1{
+    height:80px;
+    display:block;
+    background:#ff2f7c url(../images/banner.jpg) no-repeat ;
+}
+/* banner 结束 */
+/* header开始 */
+#header{
+    background:#f2f2f2;
+    height:41px;
+    box-shadow:0 2px 4px 0  rgba(0,0,0,0.30);
+}
+.wrapper{
+    width:1230px;
+    margin:0 auto;
+}
+/* header  over */
+/* header-login  begin */
+.header-login{
+    height:41px;
+    line-height:41px;
+    font-size:12px;
+    float:left;
+}
+.header-login span, .header-login a{
+    color:#999;
+
+}
+.header-login a{
+    padding-left:20px;
+}
+.header-login a:hover{
+     color:#ff0036
+}
+.header-list{
+    float:right;
+}
+.header-list li{
+    float:left;
+}
+.header-list li>a{
+    height:41px;
+    line-height: 41px;
+    color:#999;
+    padding:0 14px 0 10px;
+
+}
+.header-list li>a:hover{
+    color:#ff0036;
+
+}
+.icon-gouwucheman1{
+    color:#ff0036;
+    font-size:12px;
+}
+.icon-shouji{
+    color:#ff0036;
+    font-size:12px;
+}
+.icon-liebiaolist29{
+    color:#ff0036;
+    font-size:12px;
+}
