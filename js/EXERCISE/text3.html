@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+
+</head>
+<body>
+    <script>
+        function Judge(n){
+            var x=0;
+            if(n%3==0&&n%5==0&&n%7==0)
+                document.write("YES"+"<br/>");              
+            else
+                 document.write("NO"+"<br/>");               
+            for(var i=1;i<=1000;i++){
+                if(i%3==0&&i%5==0&&i%7==0){ 
+                   document.write(i+",");
+                   x+=1;
+                }
+                if(x==6){
+                    document.write("<br/>");
+                    x=0;
+                }
+            }
+        }
+        var num=prompt("请输入一个非负整数");
+        if (num>=0)
+            Judge(num);
+        else
+             exit;
+
+        
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
