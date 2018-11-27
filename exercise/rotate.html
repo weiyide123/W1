@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cube{
+            perspective:800px;
+            margin:0 auto;
+            width:400px;
+            height:400px;
+            position:relative;
+            transform-style: preserve-3d; 
+            animation: run 2s linear infinite ;
+            overflow: hidden;
+            
+ 
+        }
+        .cube div{
+            height:300px;
+            width:300px;
+            background :#00FFFF;
+            position:absolute;
+            opacity:.5;
+            /* background:rgba(255,255,255,.3); */
+            left:50px;
+            top:50px;
+            border:1px solid #C48888;
+            /* border-radius:18px; */
+        }
+        .cube h1{
+            font-size:40px;
+            text-align:center;
+            margin-top:120px;
+            color:#984B4B;
+        }
+        .six{
+            transform:translateZ(-300px);
+             z-index:-1;
+        }
+        .three{
+            transform:rotateY(-90deg) translateX(-150px) translateZ(-150px);
+        }
+        .four{
+            transform:rotateY(90deg) translateX(150px) translateZ(-150px);
+        }
+        .five{
+            transform:rotateX(90deg) translateY(-150px) translateZ(-150px);
+        }
+        .two{
+            transform:rotateX(-90deg) translateY(150px) translateZ(-150px);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="cube">  
+        <div class="one"><h1>1</h1></div>
+        <div class="two"><h1>2</h1></div>
+        <div class="three"><h1>3</h1></div>
+        <div class="four"><h1>4</h1></div>
+        <div class="five"><h1>5</h1></div>
+        <div class="six"><h1>6</h1></div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

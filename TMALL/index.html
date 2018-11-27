@@ -1,68 +1,891 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
-    <link rel="stylesheet" href="css/iconfont.css">
-    <link rel="stylesheet" href="css/common.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>天猫</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <div class="banner">
-        <a href="#">
-        <img src="image/banner.jpg"  alt="这是一个天猫图片" title="天猫">
-         </a>
-    </div>
-    <div id="header">
-        <div class="wrapper">
-            <div class="header-login"> 
-                <span>喵，欢迎来天猫</span>
-                <a href="#">请登录</a>
-                <a href="#">免费注册</a>
-            </div>
+	<!-- 广告位 -->
+	<div class="banner">
+		<a href="#">
+			<img src="image/banner.jpg" alt="这是一个天猫图片" title="天猫">
+		</a>
+	</div>
+	<!-- 喵喵喵 -->
+	<div id="header">
+		<div class="wrapper">
+			<div class="header-login">
+				<span>喵，欢迎来天猫</span>
+				<a href="#">请登录</a>
+				<a href="#">免费注册</a>
+			</div>
 
-            <ul class="header-list">
-                <li>
-                    <a href="#">我的淘宝</a>
-                </li>
-                <li>
-                        <a href="#">
-                                <i class="iconfont icon-gouwucheman1"></i>购物车
-                        </a>
-                </li>
-                <li>
-                        <a href="#">收藏夹</a>
-                </li>
-                <li>
-                        <a href="#">
-                                <i class="iconfont icon-shouji"></i>手机版
-                        </a>
-                </li>
-                <li>
-                        <a href="#">淘宝网</a>
-                </li>
-                <li>
-                        <a href="#">商家支持</a>
-                </li>
-                <li>
-                        <a href="#">
-                             <i class="iconfont icon-liebiaolist29"></i>网站导航
-                        </a>
-                </li>
-            </ul>
+			<ul class="header-list">
+ 
+				<li class="list-menu">
+					<a href="#">
+						我的淘宝
+					</a>
+					<span class="arrow"></span>
+					<ul class="sub-list">
+						<li>
+							<a href="#">已买到的宝贝</a>
+						</li>
+						<li>
+							<a href="#">已卖出的宝贝</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="iconfont icon-gouwucheman1"></i>购物车
+					</a>
+				</li>
+				<li class="list-menu">
+					<a href="#">收藏夹</a>
+					<span class="arrow"></span>
+					<ul class="sub-list ">
+						<li>
+							<a href="#">收藏的宝贝</a>
+						</li>
+						<li>
+							<a href="#">收藏的店铺</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list-tel">
+					<a href="#">
+						<i class="iconfont icon-shouji"></i>手机版
+					</a>
+					<div class="sub-qr">
+						<img src="image/code.png" alt="">
+
+					</div>
+				</li>
+				<li>
+					<a href="#">淘宝网</a>
+				</li>
+				<li class="list-menu">
+					<a href="#">商家支持</a>
+					<span class="arrow"></span>
+					<ul class="bus-list">
+						<li>
+							<h3>商家:</h3>
+							<a href="#">商家中心</a>
+							<a href="#">天猫规则</a>
+							<a href="#">商家入驻</a>
+							<a href="#">运营服务</a>
+							<a href="#">商家品控</a>
+							<a href="#">商家工具</a>
+							<a href="#">天猫智库</a>
+							<a href="#">喵言喵雨</a>
+
+						</li>
+						<li>
+							<h3>帮助:</h3>
+							<a href="#">帮助中心</a>
+							<a href="#">问商友</a>
+
+						</li>
+					</ul>
+				</li>
+				<li class="list-menu">
+					<a class="smenu-web" href="#">
+						<i class="iconfont icon-liebiaolist29"></i>网站导航
+					</a>
+					<span class="arrow"></span>
+					<div class="site-list">
+						<div class="site-hot"> 
+							<h2>热点推荐 <span>Hot</span></h2>
+							<ul class="site-hot-list">
+								<li><a href="">天猫超市</a></li>
+								<li><a href="">喵鲜生</a></li>
+								<li><a href=""> 科技新品</a></li>
+								<li><a href=""> 女装新品</a></li>
+								<li><a href=""> 酷玩街</a></li>
+								<li><a href=""> 内衣新品</a></li>
+								<li><a href=""> 试美妆</a></li>
+								<li><a href=""> 运动新品</a></li>
+								<li><a href=""> 时尚先生</a></li>
+								<li><a href=""> 精明妈咪</a></li>
+								<li><a href=""> 吃乐会</a></li>
+								<li><a href=""> 企业采购</a></li>
+								<li><a href=""> 会员积分</a></li>
+								<li><a href=""> 天猫国际</a></li>
+								<li><a href=""> 品质频道</a></li>
+							</ul>
+
+							
+						</div>
+						<div class="site-market"> 
+								<h2>行业市场 <span>Merket</span></h2>
+								<ul class="site-hot-list">
+									<li><a href="">美妆</a></li>
+									<li><a href="">电器</a></li>
+									<li><a href=""> 女装</a></li>
+									<li><a href=""> 男装</a></li>
+									<li><a href=""> 女鞋</a></li>
+									<li><a href=""> 内衣</a></li>
+									<li><a href=""> 男鞋</a></li>
+									<li><a href=""> 运动</a></li>
+									<li><a href=""> 箱包</a></li>
+									<li><a href=""> 母婴</a></li>
+									<li><a href=""> 家装</a></li>
+									<li><a href=""> 医药</a></li>
+									<li><a href=""> 食品</a></li>
+									<li><a href=""> 配饰</a></li>
+									<li><a href=""> 汽车</a></li>
+								</ul>
+
+						</div>
+						<div class="site-help"> 
+								<h2>服务指南 <span>Help</span></h2>
+								<ul class="site-hot-list">
+									<li><a href="">帮助中心</a></li>
+									<li><a href="">品质保障</a></li>
+									<li><a href="">特色服务</a></li>
+									<li><a href="">7天包退换</a></li>
+								</ul>
+
+						</div>
+					</div>
+				</li>
+ 
+			</ul>
+		</div>
+	</div>
+	<!-- 搜索框层 -->
+	<div id="search">
+		<div class="logo">
+			<img src="image/logo.gif" alt="图片" title="tm-logo" />
+		</div>
+		<div class="search-box">
+			<div class=clearfix>
+				<input class="search-txt" type="text" placeholder="搜索 天猫 商品/品牌/店铺" />
+				<button class="search-btn"> 搜索 </button>
+
+			</div>
+			<ul class=search-list clearfix>
+				<li><a href="#">针织衫</a></li>
+				<li class="red"><a href="#">连衣裙</a></li>
+				<li><a href="#">四件套</a></li>
+				<li class="red"><a href="#">摄像头</a></li>
+				<li><a href="#">客厅灯</a></li>
+				<li class="red"><a href="#">口红</a></li>
+				<li><a href="#">手机</a></li>
+				<li class="red"><a href="#">运动鞋</a></li>
+				<li><a href="#">牛奶</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="inner-cont">
+		<a href="#">
+			<img src="image/supermarket.png" alt="">
+		</a>
+		<a href="#">
+			<img src="image/international.png" alt="" />
+		</a>
+		<a href="#">
+			天猫会员
+		</a>
+		<a href="#">
+			电器城
+		</a>
+		<a href="#">
+			苗先生
+		</a>
+		<a href="#">
+			医药馆
+		</a>
+		<a href="#">
+			营业厅
+		</a>
+		<a href="#">
+			魅力惠
+		</a>
+		<a href="#">
+			飞猪旅行
+		</a>
+		<a href="#">
+			苏宁易购
+		</a>
+	</div>
+
+	<!-- 主要内容 -->
+	<div class="content">
+		<div class="slide-content">
+			<!-- 列表 -->
+			<div class="category">
+				<div class="cate-title">商品分类</div>
+				<ul class="main-cate-box">
+					<li class="main-cate">
+						<i class="iconfont icon-nvzhuang"></i>
+						<a href="#">女装</a> <a href="#"> /内衣</a>
+						<div class="cate-sub-list">
+							<div class="list-left">
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+
+								<div class="list-left-row">
+									<div class="list-left-title">精选上装 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">毛呢外套</a></li>
+										<li><a class="special-color" href="#">羽绒服</a></li>
+										<li><a class="special-color" href="#">棉服</a></li>
+										<li><a href="#">丝绒卫衣</a></li>
+										<li><a href="#">毛针织衫</a></li>
+										<li><a href="#">皮毛一体</a></li>
+										<li><a href="#">皮草</a></li>
+										<li><a href="#">小西装</a></li>
+										<li><a class="special-color" href="#">T恤
+											</a></li>
+										<li><a href="#">短外套</a></li>
+										<li><a class="special-color" href="#">毛衣</a></li>
+										<li><a href="#">风衣</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
 
 
-        </div>
-        
-    </div>
+							</div>
+							<div class="list-right">
+								<a class="brand" href="#"><img src="image/Bershka.jpg" /></a>
+								<a class="brand" href="#"><img src="image/bnb.jpg" /></a>
+								<a class="brand" href="#"><img src="image/chuyu.jpg" /></a>
+								<a class="brand" href="#"><img src="image/CLrain.jpg" /></a>
+								<a class="brand" href="#"><img src="image/MB.jpg" /></a>
+								<a class="brand" href="#"><img src="image/My.jpg" /></a>
+								<a class="brand" href="#"><img src="image/PB.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand1.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand2.jpg" /></a>
+								<a class="brand" href="#"><img src="image/goelia.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand4.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand5.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand6.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand7.jpg" /></a>
+								<a class="brand" href="#"><img src="image/brand8.jpg" /></a>
+								<a class="brand" href="#"><img src="image/TW.jpg" /></a>
+								<a class="BIGbrand" href="#"><img src="image/BIGbrand.jpg" /></a>
+							</div>
+
+
+						</div>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-nanzhuang"></i>
+						<a href="#">男装</a> <a href="#"> /运动户外</a>
+						<div class="cate-sub-list">
+							<div class="list-left">
+								<div class="list-left-row">
+									<div class="list-left-title">当季流行 ></div>
+									<ul class="list-left-content">
+										<li><a class="special-color" href="#">夏季新品</a></li>
+										<li><a href="#">商场同款</a></li>
+										<li><a class="special-color" href="#">仙女连衣裙</a></li>
+										<li><a href="#">T恤</a></li>
+										<li><a href="#">衬衫</a></li>
+										<li><a href="#">时髦外套</a></li>
+										<li><a href="#">休闲裤</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										<li><a class="special-color" href="#">无痕文胸
+											</a></li>
+										<li><a href="#">运动文胸 </a></li>
+										<li><a class="special-color" href="#">潮流家居服
+											</a></li>
+										<li><a href="#">百搭船袜</a></li>
+									</ul>
+								</div>
+								<!-- <div class="cate-sub-list"> 
+										<div class="list-left">	
+
+										</div>
+										<div class="list-right">
+
+										</div>
+									</div>
+									 -->
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-xiezi1"></i>
+						<a href="#">女鞋</a> <a href="#"> /男鞋</a><a href="#"> /箱包</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-muyingyongpin "></i>
+						<a href="#">母婴玩具</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-kouhong2"></i>
+						<a href="#"> 美妆</a> <a href="#"> /个人护理</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-shouji1"></i>
+						<a href="#">手机</a> <a href="#"> /数码</a><a href="#"> /电脑办公</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-jiadian1"></i>
+						<a href="#">大家电</a> <a href="#"> /生活电器</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-jiaju"></i>
+						<a href="#">家具建材</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-qintao19"></i>
+						<a href="#">零食</a> <a href="#"> /茶酒</a><a href="#"> /进口食品</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon--shuiguolei"></i>
+						<a href="#">生鲜水果</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-qiche1"></i>
+						<a href="#">汽车</a> <a href="#"> /配件</a><a href="#"> /用品</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-jiajujiancai1"></i>
+						<a href="#">家纺</a> <a href="#"> /家饰</a><a href="#"> /鲜花</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-zuanshi1"></i>
+						<a href="#">眼镜</a> <a href="#">/腕表</a> <a href="#">/珠宝饰品</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-yiyaobaojian-copy"></i>
+						<a href="#">医药保健</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-chuju"></i>
+						<a href="#">厨房</a> <a href="#">/ 收纳</a> <a href="#">/宠物</a>
+					</li>
+					<li class="main-cate">
+						<i class="iconfont icon-tushuyinxiang"></i>
+						<a href="#">图书音像</a>
+					</li>
+
+
+				</ul>
+
+			</div>
+			<!-- 轮播图-->
+			<div class="slide-box">
+				<div class="slide-img-box">
+					<a href="#">
+						<img src="image/slide1.jpg" alt="" />
+					</a>
+					<a href="#">
+						<img src="image/slide2.jpg" alt="" />
+					</a>
+					<a href="#">
+						<img src="image/slide3.jpg" alt="" />
+					</a>
+
+				</div>
+				<ul class="slide-btn-box">
+					<li>
+						
+					</li>
+					<li>
+						
+					</li>
+					<li>
+					
+					</li>
+					<li>
+						
+					</li>
+					<li>
+					
+					</li>
+					<li>
+					
+					</li>
+			    </ul>
+
+			</div>
+
+		</div>
+
+		<div class="wrapper  brand-sale">
+			<div class="brand-list">
+				<!-- brand-list一个图 -->
+				<div class="brand-list-title">
+					<span class="brand-title-cn">品牌闪购</span><span class="brand-title-en">BRAND SALE</span>
+					<a class="brand-more" href="#"> <img src="image/TUbiao.png" alt="" /></a>
+
+				</div>
+				<div class="brand-list-img">
+					<a href="#">
+						<img src="image/big1.webp" />
+					</a>
+				</div>
+			</div>
+
+			<div class="brand-list brand-list-2">
+				<!-- brand-list一个图 -->
+				<div class="brand-list-title">
+					<span class="brand-title-cn">品牌闪购</span><span class="brand-title-en">BRAND SALE</span>
+					<a class="brand-more" href="#"> <img src="image/TUbiao.png" alt="" /></a>
+
+				</div>
+				<div class="brand-list-img">
+					<a href="#">
+						<img src="image/big2.webp" />
+					</a>
+				</div>
+			</div>
+
+			<div class="brand-list  brand-list-2">
+				<!-- brand-list一个图 -->
+				<div class="brand-list-title">
+					<span class="brand-title-cn">品牌闪购</span><span class="brand-title-en">BRAND SALE</span>
+					<a class="brand-more" href="#"> <img src="image/TUbiao.png" alt="" /></a>
+
+				</div>
+				<div class="brand-list-img">
+					<a href="#">
+						<img src="image/big3.webp" />
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- 点击进入小品牌 -->
+		<div class="  brand-logo">
+			<ul class="brands">
+				<li>
+					<img src="image/p1.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">T</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/p3.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Sepon/臣风</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/belulu.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">belulu</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/eve.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">EVE'NY/伊芙心悦</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/ssgs.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">SOSONGETH/首尚格释</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/xmly.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">喜马拉雅好声音</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/snd.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Schneider Electrical</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/cry.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Crystaluxe</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/aspire.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">优惠卷 ￥30</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/meizanchen.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">ENFINITAS/蓝臻</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/bfjy.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">奔富酒园</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/njdx.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">优惠卷 ￥50</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/blts.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">布朗天使</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/jfzs.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Skin Menu/肌肤之食</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/adb.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Aide Baou/爱得堡</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/pdy.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">普哆衣</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/gate.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Gateman</p>
+						<span class="enter">点击进入</span>
+					</a>
+
+				</li>
+				<li>
+					<img src="image/yn.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">依纳</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/chains.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Pinterchains/品特链条</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/mh.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">米皇</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/plm.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Palsmon</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/dfn.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Difiney/蒂芙妮</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/royal.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">ROYAL CHNIN/皇家</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/tjr.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">优惠卷 ￥100</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/lan.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">澜</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/race.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">Racekish</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/toto.png" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">卫洗丽</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/j brand.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">J Brand</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<img src="image/hyg.webp" alt="" />
+					<a class="brand-logo-mask" href="#">
+						<p class="coupon">杭依阁</p>
+						<span class="enter">点击进入</span>
+					</a>
+				</li>
+				<li>
+					<a class="brand-logo-special" href="#">
+						<i class="iconfont icon-huanyipi2"></i>
+						<span class="changeone">换一批</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="floor-goods">
+			<div class="floor-goods-title">
+				<img src="image/mark.png"  alt="" />
+				<ul>
+					<li><a href="#">进口食品</a></li>
+					<li><a href="#">食品饮料</a></li>
+					<li><a href="#">粮油副食</a></li>
+					<li><a href="#">美容洗护</a></li>
+					<li><a href="#">家具家电</a></li>
+					<li><a href="#">家庭清洁</a></li>
+					<li><a href="#">母婴用品</a></li>
+					<li><a href="#">生鲜水果</a></li>
+				</ul>
+			</div>
+			<div class="floor-goods-cont">
+				<div class="goods-cont-left">
+					<a href="#"> <img src="image/lyl.jpg"  alt="" />
+						<div class="left-tip">
+							 <span class=tip-one> 天猫超市</span>
+							 <span class=tip-two> 第2件0元 抢100劵</span>
+						</div>
+						<div class="left-detail">
+							<img src="image/dayu.png" alt=""/>
+						</div>
+						
+					
+					
+					
+					</a>
+
+				</div>
+				<div>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
 
 
 
 
 
 
-    <!-- <a class="banner1" href="#">
+	</div>
+
+
+
+
+
+
+
+
+	<!-- <a class="banner1" href="#">
     </a>
      -->
 
@@ -73,4 +896,5 @@
 
 
 </body>
+
 </html>
