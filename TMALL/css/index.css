@@ -831,3 +831,44 @@ a:hover{
     margin-right:10px;
 
 }
+
+/* 固定部分 */
+.fix{
+    width:35px;
+    height:724px;
+    position: fixed;
+    background: #000;
+    right:0;
+    top:0;
+}
+.fix i{
+    font-size:20px;
+    font-weight: inherit;
+ 
+}
+.f{
+    float:left;
+    width:35px;
+    height:35px;
+    text-align: center;
+    color:#fff;
+}
+.f .i{
+    color:#fff;
+}
+.mao i{
+    font-weight:  700;
+}
+.shopping i{
+    color:#ff0036;
+}
+.shopping{
+    float: left;
+    text-align: center;
+    width:25px;
+    margin-left:4px;
+    font-size: 16px;
+    height:100px;
+    color:#fff;
+ 
+}
