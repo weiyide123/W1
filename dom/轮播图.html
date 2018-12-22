@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            width: 750px;
+            height: 291px;
+            margin:100px auto;
+            position: relative;
+        }
+        /* 图片 */
+        #img-box img{
+            display: none;
+        }
+        /* 图片 */
+        #img-box .active{
+            display: block;
+        }
+        #btn-box li,#arrow-box li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,0.5);
+            margin-right: 5px;
+            color:#fff;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btn-box .selected{
+            background: #ff0036;
+        }
+        #btn-box{
+            position: absolute;
+            right:10px;
+            bottom: 10px;
+        }
+        #arrow-box{
+            position: absolute;
+            left:10px;
+            bottom:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="img-box">
+            <img class="active" src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+        <ul id="btn-box">
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul id="arrow-box">
+            <li id="prev">&lt;</li>
+            <li id="next">&gt;</li>
+        </ul>
+    </div>
+    <script>
+        var acontainer=document.getElementById('container');
+        var abtnbox=document.getElementById('btn-box');
+        var aLi=abtnbox.getElementsByTagName('li');
+        var aImg=document.getElementsByTagName('img');
+        var anext=document.getElementById('next');
+        var oprev=document.getElementById('prev');
+        var iNow=0;
+        var timer;
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index=i;
+            aLi[i].onclick=function(){
+                change(this.index);
+                iNow=this.index;
+            }
+        }
+        anext.onclick=function(){
+            iNow++;
+            if(iNow==aLi.length){
+                iNow=0;
+            }
+            change(iNow);
+        }
+        oprev.onclick=function(){
+            iNow--;
+            if(iNow==-1){
+                iNow=aLi.length-1;
+            }
+            change(iNow);
+        }
+        function change(idx){
+            for(var j=0;j<aLi.length;j++){
+                    aLi[j].className="";
+                    aImg[j].className="";
+            }
+            aLi[idx].className="selected";
+            aImg[idx].className="active";
+        }
+
+//  鼠标划出，定时器继续。
+        acontainer.onmouseout=function(){
+            run();
+        }
+//鼠标划入清除定时。 
+        acontainer.onmouseover=function(){
+            clearInterval(timer);
+        }
+        run();
+        function run(){
+            timer=setInterval(function(){
+                anext.onclick()
+            },2000)
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

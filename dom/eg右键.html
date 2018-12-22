@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #eve{
+            /* background: #ff; */
+            width:80px;
+            height:110px;
+            border:1px solid rgb(185, 159, 159);
+            display:none;
+            position:absolute;
+            border-radius: 9px;
+            box-shadow:0px 0px 2px 0 ;
+            text-align:center;
+            overflow:hidden;
+        }
+        ul{
+            list-style:none;
+        }
+        li{
+            /* margin-left:10px; */
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul li:hover{
+            background: #444;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+
+    <ul id="eve">
+        <li>刷新</li>
+        <li>复制</li>
+        <li>粘贴</li>
+        <li>剪切</li>
+        <li>属性</li>
+    </ul>
+    <script>
+        var event=document.getElementById('eve');
+        var aLi=event.getElementsByTagName("li");
+        
+       
+        document.oncontextmenu=function(e){
+            // var event=document.getElementById('eve');
+            event.style.display="block";
+            event.style.left=e.clientX+"px";
+            event.style.top=e.clientY+"px";
+            e.preventDefault();
+            //e.returnValue=false;ie
+        }
+    
+        for( var i=0;i<aLi.length;i++){
+            aLi[i].onclick=function(){
+                console.log(this.innerHTML);
+                event.style.display="none";
+            }
+        }
+              
+            
+
+
+
+
+            // return false;阻止默认行为
+            
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
