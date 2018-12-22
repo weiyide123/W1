@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+    <div id="one">
+        sheme
+    </div>
+    <div id="two">
+        234
+        <div id="three">
+            fighting
+        </div>
+    </div>
+    <script>
+
+        Wone=document.getElementById("one");
+        Wtwo=document.getElementById("two");
+        Wthree=document.getElementById("three");
+        // console.log(Wtwo.firstChild.nodeName);
+        function next(elem){
+            do{
+                elem=elem.nextSibling;
+            }while(elem&&elem.nodeType!=1)
+            return elem;
+        }
+        console.log(next(Wone));
+        var Wone1=next(Wone);
+        Wone1.style.background="pink";
+
+
+    </script>
+</body>
+</html>
