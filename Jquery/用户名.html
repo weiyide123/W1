@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            background: #fc9d99;
+            border:1px solid red;
+        }
+        *{
+            outline:none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="btn" value="请输入用户名"><br>
+    <input type="password" id="atn" value="请输入密码"><br>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('#btn').on('focus',function(){
+            // $(':text').prop('value','');
+            console.log(this.value);
+            console.log(this.defaultValue);
+            if(this.value==this.defaultValue){
+                this.value="";
+            }
+            $(this).addClass('active');
+        })
+        $('#btn').on('blur',function(){
+            if(this.value==""){
+                this.value=this.defaultValue;
+            }
+            $(this).removeClass('active');
+        })
+        $('#atn').on('focus',function(){
+            // $(':text').prop('value','');
+            console.log(this.value);
+            console.log(this.defaultValue);
+            if(this.value==this.defaultValue){
+                this.value="";
+            }
+            $(this).addClass('active');
+        })
+        $('#atn').on('blur',function(){
+            if(this.value==""){
+                this.value=this.defaultValue;
+            }
+            $(this).removeClass('active');
+        })  
+    </script>
+</body>
+</html>

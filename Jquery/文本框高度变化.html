@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        outline:none;;
+    }
+
+    #text{
+        width:400px;
+        height:100px;
+        background: #fc9d99;
+        border:2px solid #d24d57;
+        border-radius:30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#600000;
+        padding:10px;
+        text-decoration:none;
+        
+
+    }
+    #total{
+        text-align: center;
+    }
+    #big {
+         width:50px;
+         height:30px;
+         background: #fc9d99;
+         border:2px solid #d24d57;
+         border-radius: 10px;
+    }
+    #small{
+         width:50px;
+         height:30px;
+         background: #fc9d99;
+         border:2px solid #d24d57;
+         border-radius: 10px;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div id="total">
+        <button id="big">放大</button>
+        <button id="small">缩小</button><br><br>
+        <textarea id="text">从前有一只小金fling  她可爱又聪明 她坚强又勇敢 danshiyouyizhidalaohu 打老虎一二手拿四五    老虎没打着  达到250d 但是热火又热问题quit高耗能的方法f</textarea>
+    </div>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('#big').on('click',function(){
+            var h=$('textarea').height();
+            if(h<500){
+                $('textarea').height(h+50);
+            }
+        })
+        $('#small').on('click',function(){
+            var h=$('textarea').height();
+            if(h>100){
+                $('textarea').height(h-50);
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>

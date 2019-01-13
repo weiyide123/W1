@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="ball"> 1
+    <input type="checkbox" name="ball"> 2
+    <input type="checkbox" name="ball"> 3
+    <input type="checkbox" name="ball"> 4 <br>
+    <button  id ="all">全选</button>
+    <button  id ="nall">全不选</button>
+    <button  id ="rall">反选</button>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('#all').on('click',function(){
+            $(':checkbox').prop("checked",true);
+        })
+        $('#nall').on('click',function(){
+            $(':checkbox').prop("checked",false);//attr普通属性，只能一次。prop特性，可多次；
+        })
+        $('#rall').on('click',function(){
+            $(':checkbox').each(function(index,elem){
+                elem.checked=!elem.checked;
+            })
+            
+        })
+        // removeAttr() 移除属性
+        // $('#div1').removeAttr('class');
+
+    
+    
+    
+    </script>
+
+</body>
+</html> 
