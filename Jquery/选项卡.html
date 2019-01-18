@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        textarea{
+            width:300px;
+            height:200px;
+            display:none;
+        }
+       
+        .active{
+            display:block;
+        }
+        #total{
+            height:200px;
+            width:300px;
+            text-align: center;
+        }
+        .selected{
+            background: #ff0;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="total">
+        <span class="selected">时事</span>
+        <span>体育</span>
+        <span>娱乐</span><br>
+        <textarea class="active">时事</textarea>
+        <textarea>体育</textarea>
+        <textarea>娱乐</textarea>
+    </div>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('span').on('click',function(){
+            $(this).addClass('selected').siblings().removeClass('selected');
+            $('textarea').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        })
+    
+    
+    
+    </script>
+</body>
+</html>

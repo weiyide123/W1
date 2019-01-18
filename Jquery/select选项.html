@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #one{
+            height:200px;
+            width:50px;
+            margin:0 50px  0 100px;
+        }
+        #two{
+            height:200px;
+            width:50px;
+            margin:0 50px  0  0px;
+        }
+        .choice{
+            height:23px;
+            width:50px;
+        }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <select id="one" multiple="multiple">
+        <option value="" class="choice" >1</option>
+        <option value="" class="choice" >2</option>
+        <option value="" class="choice" >3</option>
+        <option value="" class="choice" >4</option>
+        <option value="" class="choice" >5</option>
+        <option value="" class="choice" >6</option>
+        <option value="" class="choice" >7</option>
+        <option value="" class="choice" >8</option>
+    </select>
+    <select id="two" multiple="multiple">
+            
+    </select><br>
+    <button id="first">移到右边</button>
+    <button id="second">移到左边</button>
+    <button id="third">全部移到右边</button>
+    <button id="fourth">全部移到左边</button>
+
+
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $('#first').on('click',function(){
+            $("#one option:selected").appendTo('#two');
+            $("#two option").prop('selected',false);
+        })
+        $('#second').on('click',function(){
+            $("#two option:selected").appendTo("#one");
+            $("#one option").prop('selected',false);
+        })
+        $('#third').on('click',function(){
+            $('#one option').appendTo('#two')
+        })
+        $('#fourth').on('click',function(){
+            $('#two option').appendTo('#one')
+        })
+        $('#one').on('dblclick',function(){
+            $('#one option:selected').appendTo("#two")
+            $('#two option').prop('selected',false)
+        })
+        $('#two').on('dblclick',function(){
+            $('#two option:selected').appendTo("#one")
+            $('#one option').prop('selected',false)
+        })
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

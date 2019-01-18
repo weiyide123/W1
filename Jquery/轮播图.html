@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            width: 750px;
+            height: 291px;
+            margin:100px auto;
+            position: relative;
+        }
+        /* 图片 */
+        #img-box img{
+            display: none;
+            height:300px;
+            width:800px;
+        }
+        /* 图片 */
+        #img-box .active{
+            display: block;
+        }
+        #btn-box li,#arrow-box li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,0.5);
+            margin-right: 5px;
+            color:#fff;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btn-box .selected{
+            background: #ff0036;
+        }
+        #btn-box{
+            position: absolute;
+            right:10px;
+            bottom: 10px;
+        }
+        #arrow-box{
+            position: absolute;
+            left:10px;
+            bottom:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="img-box">
+            <img class="active" src="image/niu.jpg" alt="">
+            <img src="image/beau.jpg" alt="">
+            <img src="image/rose.jpg" alt="">
+            <img src="image/green.jpeg" alt="">
+            <img src="image/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">
+        </div>
+        <ul id="btn-box">
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul id="arrow-box">
+            <li id="prev">&lt;</li>
+            <li id="next">&gt;</li>
+        </ul>
+    </div>
+    
+    <script src="jquery-1.12.4.js"></script>
+    <script>  
+        var iNow=0;
+        $('li').on('click',function(){
+            $(this).addClass('selected').siblings().removeClass('selected');
+            index=$(this).index();
+            $('img').eq(index).addClass('active').siblings().removeClass('active');
+            iNow=$(this).index();
+        })
+        $('#next').on('click',function(){
+            // index=$(this).index()+1;
+            // $('img').eq(index).addClass('active').siblings().removeClass('active');
+            iNow++;
+            // $(this).addClass('selected').siblings().removeClass('selected');
+            // index=$(this).index();
+            // $('img').eq(index).addClass('active').siblings().removeClass('active');
+            $('img').eq(iNow).addClass('active').siblings().removeClass('active');
+        })
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

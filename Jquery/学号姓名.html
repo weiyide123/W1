@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            /* border:1px solid #000; */
+            width:300px;
+        }
+        td{
+            width:50%;
+        }
+        *{
+            outline:none;
+        }
+        input{
+            background:transparent;
+            border-style:none;
+        }
+        .second{
+            cursor:pointer;
+        }
+     
+    </style>
+</head>
+<body>
+    <table   border="1" >
+        <tr>
+            <th  colspan="2">注意：鼠标点击表格就可以编辑</th>
+        </tr>
+        <tr>
+            <th >姓名</th>
+            <th >学号</th>
+        </tr>
+        <tr>
+            <td class="first">1</td>
+            <td class="second">张三</td>
+        </tr>
+        <tr>
+            <td class="first">2</td>
+            <td class="second">李四</td>
+        </tr>
+        <tr>
+            <td class="first">3</td>
+            <td class="second">王五</td>
+        </tr>
+        <tr>
+            <td  class="first">4</td>
+            <td class="second">赵柳</td>
+        </tr>
+
+    </table>
+        <script src="jquery-1.12.4.js"></script>
+        <script>
+            $('tr:even').css("background","#bbe1f1");
+            $('tr').not(':even').css('background','#bebebe')
+            $('th:first').css('background', 'red');
+            $('th:first').css('opacity', '0.5');
+            $('.second').on('click',function(){
+            //判断是否可编辑，如果不可编辑才做
+                if($(this).find('input').size()<=0){
+                    var $val=$(this).html();
+                    $(this).html('<input  value="'+ $val +'"></input>');
+                    $('input').css("width","100");
+                    $(this).children().trigger('select');//select选中文字 ,focus获取焦点
+                }
+            })
+            //事件委托   后生成元素的事件绑定问题
+            $('.second').on('keyup','input',function(e){
+                if(e.which==13){
+                    var val=$(this).val();
+                    $(this).parent().html(val);
+                }
+            })
+            $('.second').on('blur','input',function(){//失去焦点。
+                var val=$(this).val();
+                $(this).parent().html(val);
+            })
+
+
+
+
+            
+
+
+
+
+        </script>
+    
+</body>
+</html>

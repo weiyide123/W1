@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        }
+        #web{
+            background: #bebebe;
+        }
+        /* 屏幕横过来 */
+        @media screen and ( orientation:landscape){
+            #web{
+                background: #000;
+            }
+        }
+
+        @media screen and (max-width:960px){
+            #web{
+            background:#e0cf0d;
+            }
+        }
+        @media screen and (max-width:320px){
+            #web{
+                background: #fc9d99;
+            }
+        }
+    </style> 
+</head>
+<body>
+     <div  id="web">wei  </div>
+       <!-- 
+        viewport  width=device-width 页面宽度 = 设备宽度
+     -->
+</body>
+</html>
