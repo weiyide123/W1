@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <script>
+     /* 
+        箭头函数this指向：
+            箭头函数中this指的是声明时的this   父作用域中的this
+            普通函数中this指的是调用时的this
+        箭头函数不能用于构造函数
+        箭头函数中不能使用arguments
+
+
+
+        
+     */
+        // function a(){
+        //     console.log('a');
+        // }  
+        // var b = function(){
+        //     console.log('b');
+        // }
+
+        // a();
+        // b();
+
+        // var fn = (x) => {
+        //     console.log('fn',x);
+        // }
+        // 函数fn return x
+        // var fn = x => x;
+
+        // var fn = x => console.log('fn',x);
+
+        // var fn2 = (x,y,z) => {
+        //     console.log(x,y);
+        // }
+        // fn2(1,2,3); 
+        // console.log(fn2.length );
+
+        // var f1 = function(){
+        //     console.log(this);
+        // }
+        // f1();
+    
+        
+        var oBtn = document.getElementById('btn');
+
+        // oBtn.onclick = () => {
+        //     console.log(this);
+        // }
+
+        // oBtn.onclick = function(){
+        //     setTimeout(function(){
+        //         console.log(this);
+        //     },1000)
+        // }
+        // window
+        // oBtn.onclick = () => {
+        //     setTimeout(() => {
+        //         console.log(this);
+        //     },1000);
+        // }
+
+        // var obj = {
+        //     name:'zxs',
+        //     age:21,
+        //     say:function(){
+        //         console.log(this);
+        //     }
+        // }
+        
+        // let obj = {
+        //     name:'zxs',
+        //     age:21,
+        //     say:function() {
+        //         setTimeout(() => {
+        //             console.log(this);
+        //         });
+        //     }
+        // }
+
+        // obj.say();
+
+        // function Person(){
+            
+
+        // }
+        // var p1 = new Person();
+        // let Person = () => {
+
+        // }
+
+        // new Person();//报错
+
+        var fn = (...rest) => {
+            // console.log(arguments);
+            console.log(rest);
+        }
+        fn(1,2,3);
+
+        
+
+
+
+
+
+
+
+
+        
+        /*
+            this指向问题 
+            函数中 window
+            点击事件this 指向谁的点击事件this指向谁
+            定时器中this window
+            在对象中this指向当前对象
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    </script>
+    
+</body>
+</html>

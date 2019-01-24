@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 200px;
+            height:200px;
+            background: #bebebe;
+        }
+        #div2{
+            width:50px;
+            height:40px;
+            background:coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="bb">
+        <div id="div1" @click='change1()'>
+            <!-- <div id="div2" v-on:click.stop="change2()"></div>   -->
+            <!-- .stop   或者 .prevent组织默认行为 -->
+            <div id="div2" v-on:click="change2()"></div>  
+        </div>
+        
+    </div>
+    <script src="vue.js"></script>
+    <script>
+
+        var wj=new Vue({
+            el:'#bb',
+            data:{
+
+            },
+            methods:{
+                change1(){
+                    console.log('1111 div1');
+                },
+                change2(){
+                    event.stopPropagation();
+                    // 组织默认行为   原生
+                    console.log('222  div2');
+                }
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>

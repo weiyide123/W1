@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <div v-if="a">哈哈</div>
+        <div v-else>呵呵</div>
+
+
+        <h2 v-if="b=='x'">1</h2>
+        <h2 v-else-if="b=='y'">2 </h2>
+        <h2 v-else="b=='z'">3</h2>
+<!-- v-show表示 display：block,none -->
+        <div v-show="a">haha</div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm =new Vue({
+            el:'#app',
+            data:{
+                a:true,
+                b:'x'
+            }
+        })
+
+    
+    
+    
+    </script>
+</body>
+</html>

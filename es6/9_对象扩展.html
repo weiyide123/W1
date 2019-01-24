@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "zs";
+        var age = 20;
+        var sc = 'school';
+
+        // 属性名与变量名同名
+        // var obj = {
+        //     name:name,
+        //     age:age,
+        //     sc:'weichuang',
+        //     say:function(){
+        //         console.log(this.name);
+        //     }
+        // }
+        // var obj2 = {
+        //     name,
+        //     age,
+        //     [sc]:'weichuang',
+        //     say(){
+        //         console.log(this.name);
+        //     }
+        // }
+        // console.log(obj);
+        // console.log(obj2);
+
+        // // console.log( obj2[sc] );
+        // obj.say();
+        // obj2.say();
+        // 比较两个值是否严格相等
+        console.log( NaN === NaN );
+        console.log( +0 === -0 );
+        console.log( Object.is(NaN,NaN));
+        console.log( Object.is(+0,-0));
+
+        var obj1 = {
+            name:'zs',
+            age:20
+        }
+        var obj2 = {
+            name:'lisi',
+            school:'weichuang'
+        }
+
+        var obj3 = {...obj1,...obj2}
+
+        console.log(Object.assign(obj1,obj2));
+
+        console.log( 'xx' in obj1);
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    </script>
+
+    
+</body>
+</html>

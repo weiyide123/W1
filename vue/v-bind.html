@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .a{
+            background: #343443;
+        }
+        .b{
+            color:coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div v-bind:title='title' :id="xx+'01'">
+            <!-- v-bind:title  的简写 :title -->
+            {{msg}}
+        </div>
+        <!-- 第一种方式   <div :class="{a:isA,b:isB}">   wwwwwww </div> -->
+        <!-- 第二种方式 -->
+        <div :class="[classA,classB]">
+                hah
+        </div>
+
+
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm=new Vue({
+            el:'#app',
+            data:{
+                msg:"hello",
+                title:'title1',
+                xx:'xxy',
+                isA:true,
+                isB:true,
+                classA:"a",
+                classB:"b"
+            }
+        })
+    </script>
+</body>
+</html>
