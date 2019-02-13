@@ -9,7 +9,8 @@
 <body>
     <div id="app">
         <!-- <div :style="{background:bg,color:col}">第一种</div> -->
-        <div >第二种 </div>
+        <!-- <div :style="obj">第二种 </div> -->
+        <div :style="[objBg,objWd]">  第三种 </div>
     </div>
     <script src="vue.js"></script>
     <script>
@@ -17,7 +18,19 @@
             el:'#app',
             data:{
                 bg:'red',
-                col:'blue'
+                col:'blue',
+                obj:{
+                    background:'#ff0036',
+                    border:'1px solid green'
+                },
+                objBg:{
+                    background:"pink",
+                    color:'black'
+                },
+                objWd:{
+                    width:'200px',
+                    height:'20px'
+                }
             }
         })    
     

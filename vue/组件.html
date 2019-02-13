@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <wc></wc>
+        <myc></myc>
+        <myc2></myc2>
+
+    </div>
+    <div id="div1">
+            <wc></wc>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        Vue.component('wc',{
+            // 全局组件，，定义组件， 组件名是wc
+            template:'<h2>hah</h2>'
+        });
+        var vm =new Vue({
+            el:'#app',
+            data:{
+
+            },
+            components:{
+                'myc':{
+                    template:'<h3>myC</h3>'
+                },
+                'myc2':{
+                    template:'<h3>myC22</h3>'
+                }
+            }
+        });
+
+        // var vm =new Vue({
+        //     el:'#app1',
+        //     data:{
+
+        //     }
+        // });
+    
+    
+    </script>
+</body>
+</html>

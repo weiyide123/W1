@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <zj name="111"  age="20"></zj>
+        <!-- <zj name="222" age="18"></zj> -->
+    </div>
+    <template id="temp">
+            <div>
+                <h1>{{name}}</h1>
+                <p>{{age}}</p>
+            </div>
+    </template>
+    <script src="vue.js"></script>
+    <!-- <script type="text/template" id="temp">
+        <div>
+            <h1>{{name}}</h1>
+            <p>{{age}}</p>
+        </div>
+    </script> -->
+    <script>
+    // 父组件像子组件传值props,子组件像父组件传值，$emit('xx','title'),xx是一个事件，title是要传的值。
+        var vm =new Vue({
+            el:'#app',
+            data:{
+            },
+            components:{
+                'zj':{
+                    // template:'<h3>我是组件{{name}}---{{age}}</h3>',
+                    template:'#temp',
+                    props:['name','age']
+                }
+            }
+        });  
+    </script>
+</body>
+</html>

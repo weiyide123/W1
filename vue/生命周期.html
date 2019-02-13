@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="msg++">add</button>
+        <button @click="del()">del</button>
+        {{msg}}
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm =new Vue({
+            el:'#app',
+            data:{
+                // msg:'hello'
+                msg:0
+            },
+            methods:{
+                del(){
+                    vm.$destroy();
+                }
+            },
+            // 什么都没有
+            beforeCreate(){
+                console.log(this.$data,this.$el);
+            },
+            // 有data但是没有el
+            created(){
+                console.log(this.$data,this.$el);
+            },
+            // el有了，但是没有挂载，显示为｛｛msg｝｝
+            beforeMount(){
+                console.log(this.$data,this.$el);
+            },
+            // 挂载成功
+            mounted(){
+                console.log(this.$data,this.$el);
+            },
+            // 修改数据,属性更新之前
+            beforeUpdate(){
+                // console.log(this.$el);
+                console.log('beforeUpdate');
+            },
+            updated(){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                console.log('updated');
+            },
+            beforeDestroy(){
+                console.log('beforeDestroy');
+            },
+            destroyed(){
+                console.log('destroyed');
+            }
+
+        })
+    </script>
+</body>
+</html>

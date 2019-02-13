@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <demo name="title1">
+            <div slot="content">
+                <h3>我是内容标题</h3>
+                <p>我是内容内容</p>
+            </div>
+            <input  slot=" footer"type="text">
+            <!-- 如果h3, p都不存在时，slot中的内容会显示出来， -->
+        </demo>
+    </div>
+
+    <template id="temp">
+        <div>
+            <h2>{{name}}</h2>
+            <div>
+                <!-- 占位slot -->
+                content:
+                <slot name="content">我是默认的内容</slot>
+            </div>
+            <div>
+                footer：
+                <slot name="footer">moren</slot>
+            </div>
+        </div>
+    </template>
+    <script src="vue.js"></script>
+    <script>
+        var vm=new Vue({
+            el:'#app',
+            data:{
+
+            },
+            components:{
+                'demo':{
+                    template:'#temp',
+                    props:['name']
+                }
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/*! 唯创 */
+#div1 {
+  background: red;
+}
+
+#div2 {
+  /* background: pink; */
+  width: 200px;
+  height: 200px;
+  background: url(img/12288ac73f76cccdcb45802e3bed8727.jpg) 0 0 no-repeat;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  border-radius: 5px;
+}
