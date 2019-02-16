@@ -5,15 +5,25 @@ import Mine from './views/Mine.vue'
 import Text from './views/Text.vue'
 import A from './views/A.vue'
 import B from './views/B.vue'
+import Count from './views/Count.vue'
+import Error from './views/Error.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',  
+  // base:Process.env.BASE_URL,
+  // 默认hash，如果不写的时候
+
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      beforeEnter(to,from,next){
+        console.log(to,from,next);
+        next();
+      }
     },
     {
       path: '/about/:name/:id',
@@ -35,16 +45,27 @@ export default new Router({
         path:'/a',
         component:A
       },
-      {
-        path:'/b',
-        component:B
-      }
+    {
+      path:'/b',
+      component:B
+    }
     ]
     },
     {
       path:'/bb/:name/:id',
       redirect:'/about/:name/:id'
-
+    },
+    {
+      path:'/',
+      alias:'/abc',
+      component:Home
+    },{
+      path:'/count',
+      component:Count
+    },
+    {
+      path:'*',
+      component:Error
     }
   ]
 })
