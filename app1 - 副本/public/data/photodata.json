@@ -1,76 +1,76 @@
 {
   "photoData": [
     {
-      "src": "/img/1.jpg"
+      "src": "http://localhost:8080/img/l1.jpg"
     },
     {
-      "src": "/img/2.jpg"
+      "src": "http://localhost:8080/img/l2.jpg"
     },
     {
-      "src": "/img/3.jpg"
+      "src": "http://localhost:8080/img/l3.jpg"
     },
     {
-      "src": "/img/4.jpg"
+      "src": "http://localhost:8080/img/l4.jpg"
     },
     {
-      "src": "/img/5.jpg"
+      "src": "http://localhost:8080/img/l5.jpg"
     },
     {
-      "src": "/img/6.jpg"
+      "src": "http://localhost:8080/img/l6.jpg"
     },
     {
-      "src": "/img/7.jpg"
+      "src": "http://localhost:8080/img/l7.jpg"
     },
     {
-      "src": "/img/8.jpg"
+      "src": "http://localhost:8080/img/l8.jpg"
     },
     {
-      "src": "/img/9.jpg"
+      "src": "http://localhost:8080/img/l9.jpg"
     },
     {
-      "src": "/img/10.jpg"
+      "src": "http://localhost:8080/img/l10.jpg"
     },
     {
-      "src": "/img/11.jpg"
+      "src": "http://localhost:8080/img/l11.jpg"
     },
     {
-      "src": "/img/12.jpg"
+      "src": "http://localhost:8080/img/l12.jpg"
     },
     {
-      "src": "/img/13.jpg"
+      "src": "http://localhost:8080/img/l13.jpg"
     },
     {
-      "src": "/img/14.jpg"
+      "src": "http://localhost:8080/img/l14.jpg"
     },
     {
-      "src": "/img/15.jpg"
+      "src": "http://localhost:8080/img/l15.jpg"
     },
     {
-      "src": "/img/16.jpg"
+      "src": "http://localhost:8080/img/l16.jpg"
     },
     {
-      "src": "/img/17.jpg"
+      "src": "http://localhost:8080/img/l17.jpg"
     },
     {
-      "src": "/img/18.jpg"
+      "src": "http://localhost:8080/img/l18.jpg"
     },
     {
-      "src": "/img/19.jpg"
+      "src": "http://localhost:8080/img/l19.jpg"
     },
     {
-      "src": "/img/20.jpg"
+      "src": "http://localhost:8080/img/l20.jpg"
     },
     {
-      "src": "/img/21.jpg"
+      "src": "http://localhost:8080/img/l21.jpg"
     },
     {
-      "src": "/img/22.jpg"
+      "src": "http://localhost:8080/img/l22.jpg"
     },
     {
-      "src": "/img/23.jpg"
+      "src": "http://localhost:8080/img/l23.jpg"
     },
     {
-      "src": "/img/24.jpg"
+      "src": "http://localhost:8080/img/l24.jpg"
     }
   ]
 }
