@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- props 父向子传值  不可变得，state  可以根据用户交互改变 -->
+        <div id="root"></div>
+        <script src="react.development.js"></script>
+        <script src="react-dom.development.js"></script>
+        <script src="browser.min.js"></script>
+        <script type="text/babel">
+            let MyComponent = (props) => {
+                return(
+                    <div>
+                        <h1>{props.title}</h1>
+                        <h2>{props.desc}</h2>
+                        <p>{props.children}</p>
+                    </div>
+                )
+            }
+            // class MyComponent extends React.Component{
+            //     render(){
+            //         return(
+            //             <div>
+            //                 <h1>{this.props.title}</h1>
+            //                 <p>{this.props.desc}</p>
+            //                 <p>{this.props.children}</p>
+
+            //             </div>
+            //         )
+            //     }
+            // }
+            ReactDOM.render(<MyComponent title="xixi"  desc="zujian">child</MyComponent>,document.getElementById('root')) 
+        
+        
+        
+        
+         </script>
+    
+</body>
+</html>

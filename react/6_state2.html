@@ -12,36 +12,37 @@
         <script src="react-dom.development.js"></script>
         <script src="browser.min.js"></script>
         <script type="text/babel">
-            class  Count extends React.Component{
+    // 1.state 是一个对象 可以存储多个值
+    // 2.取state   this.state.num 
+    // 3.修改state   setState()
+    //  state 只有class这个组件可以用
+            class Count extends React.Component{
                 constructor(props){
                     super(props),
                     this.state={
                         num:1
                     }
-                    // this.addHandle=this.addHandle.bind(this)
-                    // 方法1,更好
                 }
                 addHandle(){
-                    // console.log('ghgh');
-                    // setState 修改状态
                     this.setState({
                         num:++this.state.num
                     })
                 }
                 render(){
                     return(
-                        <div>
-                            <h1>{this.state.num}</h1>
-                           <button onClick={this.addHandle.bind(this)}>add //this方法2</button>
-                        </div>
-                    )
+                        <div> 
+                            <h1>    {this.state.num}   </h1>
+                             <button onClick={this.addHandle.bind(this)}>add</button>
+                             </div>
+                        )
                 }
             }
             ReactDOM.render(
                 <Count></Count>
                 ,document.getElementById('root')
             );
-        
+
         </script>
+    
 </body>
 </html>
