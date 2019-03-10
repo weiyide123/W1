@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 生命方式
+        // exec()返回  从字符串中找到要筛选得值   不符合返回null
+        // test()  符合的话返回true   不符合返回false
+        // search()  返回找到的第一个字符的下角表   没有返回-1   
+        // replace(/ 被替换的 /,"替换为")   加上/g 替换所有的。  不加替换第一个。
+        // match()  检索字符串中的值，返回数组
+         var  reg =/abc/;
+         var str ='abcderf';
+         console.log(reg.exec(str));
+        // 返回相同的部分
+         var  reg1=/a{3,5}/
+         var str1='aaaabfgha'
+        // 能否匹配3-5个a,能的话返回aaaa,不能返回null
+         console.log(reg1.exec(str1));
+         var reg2=/g*/;
+         console.log(reg2.exec(str))
+        //  *表示0个到多个
+        //  +表示一个
+        //  ？匹配最少
+        // .表示除了换行符/n以外所有都可以匹配到  /./不管什么匹配一个     /.{5}/不管什么匹配五个  /.+/所有都匹配到
+        // /^b|c.+/   b开头或包含c的所有      /^（b|c）.+/   b或c开头的所有
+        //   /^[abc]/以a或b或c开头的   返回这个字母
+        //    /^[a-zA-Z][a-zA-Z0-9_]+/   以 字母开头，后边可以是字母数字下划线
+        //     /^a-z/非字母开头
+        //     / \bc/   \b表示边界  c左右都是边界
+        //      /g全局   /i忽略大小写   /s空格   \b边界   \d数字
+    </script>
+</body>
+</html>
