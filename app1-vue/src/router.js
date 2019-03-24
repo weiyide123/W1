@@ -11,16 +11,16 @@ import ilikedetail from './views/ilike/IlikeDetail.vue'
 
 Vue.use(Router)
 
-export default new Router({
+export default new Router1({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path:'/movie',
       component:movie,
-    },
+    },  
     {
-      path:'/',
+      path:'/', 
       redirect:'/movie',
     },
     {
